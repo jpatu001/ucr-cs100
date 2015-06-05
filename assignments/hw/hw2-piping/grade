@@ -1,4 +1,4 @@
-100/ 100
+110/ 100
 Last update Sun May 17 13:21:17 2015 -0700
 
 -----------------------------------------------------
@@ -41,5 +41,3 @@ celik$ cat: extra2_2r: No such file or directory
 cat: extra2_2a: No such file or directory
 celik$   -5: 1> Does not work!
   -5: 1>> Does not work!
-  -5: 2> Does not work!
-  -5: 2>> Does not work!
