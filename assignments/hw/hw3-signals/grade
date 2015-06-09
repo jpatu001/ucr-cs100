@@ -1,6 +1,6 @@
-80/ 100
+85/ 100
 Last update Fri May 29 13:44:38 2015 -0700
-  -25: memory leak found in valgrind
+  -20: memory leak found in valgrind
 ==37017== 4 bytes in 1 blocks are definitely lost in loss record 1 of 4 ==37017== definitely lost: 4 bytes in 1 blocks
 
 
