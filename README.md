@@ -10,10 +10,10 @@ Besides the numerous benefits of Tor, setting up a Tor Relay is also an extra cr
 this class so this tutorial will help you get your precious extra credit the easiest way. 
 
 ## The Setup
-1. First we need to know the distribution.
+* First we need to know the distribution.
 We can know this by running `lsb_release -c or cat /etc/debian_version`
 
-2. Once we know the distribution, open /etc/apt/sources.list
+* Once we know the distribution, open /etc/apt/sources.list
 and add the following(change the <distribution> with whatever
 the previous step printed out):
 
@@ -25,7 +25,7 @@ deb-src http://deb.torproject.org/torproject.org <distribution> main
 // deb-src http://deb.torproject.org/torproject.org sid main
 //
 ```
-3. After changing the repo list, we run the following commands:
+* After changing the repo list, we run the following commands:
 ```
 gpg --keyserver keys.gnupg.net --recv 886DDD89
 gpg --export A3C4F0F979CAA22CDBA8F512EE8CBC9E886DDD89 | sudo apt-key add -
@@ -45,7 +45,7 @@ Now the important part. Configuring your computer as a Tor Relay.
 By doing this, not only your getting close to your extra credit, but you're also helping
 to speed up the service by volunteering as a relay.
 
-4. We can configure it by modifying the `torcc` file located at Data\Tor\torcc.
+* We can configure it by modifying the `torcc` file located at Data\Tor\torcc.
 For my case, I have it saved in my downloads folder, so I have:
 `VAIO-PC:~/Downloads/tor-browser_en-US/Browser/TorBrowser/Data/Tor$`
 Open it with any text editor, and add the following lines:
@@ -65,3 +65,9 @@ as a tor relay. We should have a message saying something like:
 Self-testing indicates your ORPort is reachable from the outside. Excellent. Publishing server descriptor.
 Self-testing indicates your DirPort is reachable from the outside. Excellent.
 ```
+
+Once done, you can check using Atlas or Globe to see whether your relay is up:
+atlas: https://atlas.torproject.org/
+https://globe.torproject.org/
+
+
